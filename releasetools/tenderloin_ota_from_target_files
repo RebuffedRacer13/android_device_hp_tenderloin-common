@@ -814,24 +814,11 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   #script.Print("Target: %s" % target_fp)
 
   script.Print(" ")
-  script.Print("             || DIRTY UNICORNS ||            ");
-  script.Print(" ")
-  script.Print(" DDDDDDDDDDDDD         UUUUUUUU     UUUUUUUU ");
-  script.Print(" D::::::::::::DDD      U::::::U     U::::::U ");
-  script.Print(" D:::::::::::::::DD    U::::::U     U::::::U ");
-  script.Print(" DDD:::::DDDDD:::::D   UU:::::U     U:::::UU ");
-  script.Print("   D:::::D    D:::::D   U:::::U     U:::::U  ");
-  script.Print("   D:::::D     D:::::D  U:::::U     U:::::U  ");
-  script.Print("   D:::::D     D:::::D  U:::::U     U:::::U  ");
-  script.Print("   D:::::D     D:::::D  U:::::U     U:::::U  ");
-  script.Print("   D:::::D     D:::::D  U:::::U     U:::::U  ");
-  script.Print("   D:::::D     D:::::D  U:::::U     U:::::U  ");
-  script.Print("   D:::::D     D:::::D  U:::::U     U:::::U  ");
-  script.Print("   D:::::D    D:::::D   U::::::U   U::::::U  ");
-  script.Print(" DDD:::::DDDDD:::::D    U:::::::UUU:::::::U  ");
-  script.Print(" D:::::::::::::::DD      UU:::::::::::::UU   ");
-  script.Print(" D::::::::::::DDD          UU:::::::::UU     ");
-  script.Print(" DDDDDDDDDDDDD               UUUUUUUUU       ");
+  script.Print("             || LineageOS ||            ");
+   script.Print("-------------------------------------------------------------------------------------------------")
+  script.Print("|                  You are instlling lineageOS 16.0 on your HP Touchpad                          |")
+  script.Print("| Made by RebuffedRacer13. If you like our work head,on to xda and please help us out by donating|")
+  script.Print("--------------------------------------------------------------------------------------------------")
   script.Print(" ")
 
   android_version = target_info.GetBuildProp("ro.build.version.release")
@@ -950,7 +937,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   # Delete other uImage traces.
   script.AppendExtra(('run_program("/sbin/busybox", "rm", "/boot/uImage.CyanogenMod");'))
   script.AppendExtra(('run_program("/sbin/busybox", "rm", "/boot/moboot.splash.CyanogenMod.tga");'))
-  script.AppendExtra(('run_program("/sbin/busybox", "rm", "/boot/uImage.Dirty-Unicorn");'))
+  script.AppendExtra(('run_program("/sbin/busybox", "rm", "/boot/uImage.lineage");'))
   script.AppendExtra(('run_program("/sbin/busybox", "rm", "/boot/uImage.Evervolv");'))
   script.AppendExtra(('run_program("/sbin/busybox", "rm", "/boot/moboot.splash.Evervolv.tga");'))
 
